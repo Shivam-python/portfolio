@@ -32,6 +32,8 @@ resizeRenderer();
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.target.set(0, 1, 0);
 controls.enableZoom = false;
+controls.maxPolarAngle = Math.PI / 2;
+controls.minPolarAngle = Math.PI / 2;
 controls.autoRotate = true;
 controls.autoRotateSpeed = 2;
 controls.update();

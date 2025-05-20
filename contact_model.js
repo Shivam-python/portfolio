@@ -7,8 +7,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 const container = document.getElementById('contact-div');
 const width = Math.max(container.clientWidth, 350) || 600;
 const height = container.clientHeight || 600;
-console.log('width', width);
-console.log('height', height);
 let fov = fetchFov(width);
 const clock = new THREE.Clock();
 let mixer;
@@ -55,8 +53,8 @@ resizeRenderer();
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.target.set(0, 0, 0);
 controls.enableZoom = false;
-controls.maxPolarAngle = Math.PI / 2; // 90 degrees = horizontal
-controls.minPolarAngle = Math.PI / 2; // also 90 = lock to horizontal
+controls.maxPolarAngle = Math.PI / 2;
+controls.minPolarAngle = Math.PI / 2;
 controls.autoRotate = true;
 controls.autoRotateSpeed = 0.5;
 
