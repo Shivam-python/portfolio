@@ -51,6 +51,10 @@
   margin-top: -1rem;
 }
 
+.skill-article {
+  margin-top: -11rem
+}
+
 @media (max-width: 65rem) {
   .padded-hero {
     margin-top: 0;
@@ -78,9 +82,43 @@
   flex-direction: column;
 }
 
+.hero-img{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+.about-responsive {
+  margin-top: -5rem;
+}
+
+.about-main-responsive {
+  margin-left: -6rem;
+}
+
+@media (max-width: 78rem) {
+  .about-main-responsive {
+  margin-left: 0;
+}
+}
+
 @media (max-width: 65rem) {
   .flex-box-responsive {
     flex-direction: row;
+  }
+  .hero-img{
+    margin-left: 15rem;
+    margin-right: 10rem;
+  }
+  .about-responsive {
+    margin-top: 0rem;
+  }
+
+  .naruto-div {
+    margin-bottom: -14rem;
+  }
+  .black-quote-pad-responsive {
+    padding-right: 3rem;
+    margin-top: 10rem;
   }
 
   .padded-hero {
